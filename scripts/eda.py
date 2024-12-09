@@ -69,7 +69,7 @@ def environmental_analysis(data):
 environmental_analysis(df)
 
 # Identify High-Potential Regions
-def high_potential_regions(data):
+'''def high_potential_regions(data):
     # Assuming you have a column for geographical coordinates (latitude and longitude)
     plt.figure(figsize=(10, 8))
     plt.scatter(data['Longitude'], data['Latitude'], c=data['GHI'], cmap='viridis', alpha=0.5)
@@ -79,8 +79,8 @@ def high_potential_regions(data):
     plt.ylabel('Latitude')
     plt.show()
 
-high_potential_regions(df)
-
+#high_potential_regions(df)
+'''
 # Correlation Analysis
 def correlation_analysis(data):
     correlation_matrix = data[['GHI', 'DNI', 'DHI', 'TModA', 'TModB', 'RH', 'WS', 'WSgust']].corr()
